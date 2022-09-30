@@ -1,0 +1,12 @@
+create database DirectSecendo;
+create table discord(sno integer primary key,discord_url varchar(255) unique not null);
+insert into discord values (1,'ABC');
+create table whatsapp(Feilds varchar(255) primary key,whatsapp_url varchar(255) not null);
+insert into whatsapp values('AIDS','AIDS'),('CE','CE'),('EXTC','EXTC'),('IT','IT'),('MECH','MECH'),('PROD','PROD');
+create table contact(sno integer auto_increment primary key,name text,email varchar(100),phone varchar(12),message varchar(255),date datetime);
+create table form(sno integer primary key,form_link varchar(255) not null);
+insert into form values(1,'ABC');
+create table login(sno integer primary key auto_increment, email varchar(50) not null unique, password varchar(20) not null unique);
+insert into login values (1,'mirzamohdjunaid8655@gmail.com','Spidy8655');
+create table notes(srno integer primary key auto_increment, contributerName text, department text, subject text, sem text, chapterNo integer, topicName text, slug varchar(255), filename varchar(255), filedata longblob, date date);
+insert into notes values (1,"Spidy","AIDS","AOA",4,2,"Dynamicprogramming","2-DP","dp.pdf","101010101",null);

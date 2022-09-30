@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+    <main>
+
+        <section class="letsTalk">
+
+            <h1 class="letsTalk-heading text-center pt-5">Join Our Discord Server <img src="{{ url_for('static',filename='images/discord.png')}}"
+                    class="discord-img" alt="discord"></h1>
+
+            <div class="joinBtn d-flex justify-content-center align-items-center">
+                <a href="{{discord.discord_url}}" class="join-Btn join-Btnn text-center" target="_blank">Join Us</a>
+            </div>
+
+            <div class="discord-perks d-flex justify-content-start align-items-start flex-column">
+
+                <h3 class="fw-bold">Perks :</h3>
+                <ol>
+                    <li>Audio as well as Video Availability</li>
+                    <li>2 sessions in a week</li>
+                    <li>Face to Face Communication with the Seniors</li>
+                    <li>To get Experties and Experinces of the Seniors</li>
+                </ol>
+            </div>
+
+
+        </section>
+
+    </main>
+
+{% endblock %}

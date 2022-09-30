@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<main>
+    <section class="AIDSnotes-section">
+        <div class="p-5">
+
+            <h1>AOA :</h1>
+            {% for n in aidsnotes %}
+            {% for i in range(1,6) %}
+            {% if n.subject == "AOA" %}
+            {% if n.chapterNo == i %}
+            <div class="notes-card  border-3 border-dark d-inline-block p-2 rounded-3 mx-2">
+                <img src="{{ url_for('static',filename='images/docs.png')}}" alt="{{n.chapterNo}}" class="docsImg d-block mx-auto">
+                <p class="fs-6 fw-bold">Chapter No : {{n.chapterNo}}</p>
+                <p class="fs-6 fw-bold">Topic Name : {{n.topicName}}</p>
+                <p class="fs-6 fw-bold">Contributer Name : {{n.contributerName}}</p>
+                <a href="/download/{{n.slug}}" class="btn btn-danger mb-3">Download</a>
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+            <h1>MP :</h1>
+            {% for n in aidsnotes %}
+            {% for i in range(1,6) %}
+            {% if n.subject == "MP" %}
+            {% if n.chapterNo == i %}
+            <div class="notes-card  border-3 border-dark d-inline-block p-2 rounded-3 mx-2">
+                <img src="{{ url_for('static',filename='images/docs.png')}}" alt="{{n.chapterNo}}" class="docsImg d-block mx-auto">
+                <p class="fs-6 fw-bold">Chapter No : {{n.chapterNo}}</p>
+                <p class="fs-6 fw-bold">Topic Name : {{n.topicName}}</p>
+                <p class="fs-6 fw-bold">Contributer Name : {{n.contributerName}}</p>
+                <a href="/download/{{n.slug}}" class="btn btn-danger mb-3">Download</a>
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+        </div>
+
+    </section>
+</main>
+
+{% endblock %}

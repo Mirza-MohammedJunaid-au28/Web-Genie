@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <main>
+
+        <section class="chat">
+            <h1 class="chat-heading text-center pt-5">Join Our Whatsapp Group <img src="{{ url_for('static',filename='images/whatsapp.png')}}"
+                    class="whatsapp-img" alt="whatsapp"></h1>
+
+            <div class="field-boxes d-flex justify-content-center align-items-center gap-5 mt-5 flex-wrap mx-auto">
+                {% for group in whatsapp%}
+                <div class="comps-box d-flex justify-content-center align-items-center flex-column">
+                    <h3>{{group.feilds}}</h3>
+                    <a href="{{group.whatsapp_url}}" class="join-Btn join-Btnn">Join Now</a>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="whatsapp-perks d-flex justify-content-start align-items-start flex-column">
+
+                <h3 class="fw-bold">Perks :</h3>
+                <ol>
+                    <li>Different Chat Groups for different Departments each having differest set of Seniors</li>
+                    <li>All the Notices of their respective departments will be provided</li>
+                    <li>A great medium for the Students to know and understand each other</li>
+                    <li>Conversation and Communication between Students</li>
+                </ol>
+
+                
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    {% endblock %}

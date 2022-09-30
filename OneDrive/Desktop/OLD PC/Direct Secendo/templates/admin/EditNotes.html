@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<main>
+    <section class="Edit-Notes">
+        <h2 class="text-center editNotes-heading pt-3">Edit Notes</h2>
+        <div class="notes-details d-flex align-items-center justify-content-center mx-auto ">
+            <table>
+                <tr class="text-center mt-2">
+                    <th class="px-4 fs-4 tabletags">Sr No</th>
+                    <th class="px-4 fs-4 tabletags">Contributer Name</th>
+                    <th class="px-4 fs-4 tabletags">Department</th>
+                    <th class="px-4 fs-4 tabletags">Subject</th>
+                    <th class="px-4 fs-4 tabletags">Sem</th>
+                    <th class="px-4 fs-4 tabletags">Chapter No</th>
+                    <th class="px-4 fs-4 tabletags">Topic Name</th>
+                    <th class="px-4 fs-4 tabletags">File Name</th>
+                    <th class="px-4 fs-4 tabletags">Date</th>
+                    <th class="px-4 fs-4 tabletags"></th>
+                </tr>
+                
+                {% for n in notes %}
+                <tr class="text-center tablerow ">
+                        <td class="p-3 fs-6 tabletags">{{n.srno}}</td>
+                        <td class="p-3 fs-6 tabletags">{{n.contributerName}}</td>
+                        <td class="p-3  fs-6 tabletags">{{n.department}}</td>
+                        <td class="p-3  fs-6 tabletags">{{n.subject}}</td>
+                        <td class="p-3  fs-6 tabletags">{{n.sem}}</td>
+                        <td class="p-3  fs-6 tabletags">{{n.chapterNo}}</td>
+                        <td class="p-3  fs-6 tabletags">{{n.topicName}}</td>
+                        <td class="p-3  fs-6 tabletags">{{n.filename}}</td>
+                        <td class="p-3  fs-6 tabletags">{{n.date}}</td>
+                        <td class="p-3  fs-6 tabletags"><a href="/deleteNotes/{{n.slug}}"><button class="btn btn-danger fs-6" type="submit">Delete</button></a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

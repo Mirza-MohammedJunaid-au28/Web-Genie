@@ -1,0 +1,131 @@
+:root{
+    /* Colors */
+    --theme-color : #1b2c9e;
+    --background-colour : rgb(212, 228, 233);
+    --box-backgrond-colour : rgb(189, 227, 240); ;
+    --white : #fff;
+
+    /* Fonts */
+    --main-font : 'Mochiy Pop P One', sans-serif; 
+    --cursive-font : 'Pacifico', cursive;
+
+}
+
+/* Media Query */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+
+    /* index.html */
+
+    .navbar{
+        height: 10vh;
+    }
+
+    .CrceLogo{
+        padding-left: 0;
+        padding-bottom: 3px;
+        height: 50px;
+        width: 200px;
+    }
+
+    .nav-home{
+        margin-top: 60px;
+    }
+
+    .nav-item{
+        background: var(--background-colour);
+    }
+
+    .nav-item > a:hover{
+        background: var(--background-colour) !important;
+        padding-left: 20px;
+        transition: .3s ease-in;
+        color: var(--theme-color) !important;
+    }
+    
+    .box-1{
+        height: 60vh;
+        width: 80vw;
+    }
+
+    .computerEngineering{
+        height: 180vh;
+    }
+
+    .faq-heading{
+        font-size: 3rem;
+    }
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+    /* Let's Talk */
+
+    .letsTalk{
+        height: 90vh;
+    }
+
+    .discord-perks{
+        width: 80vw;
+    }
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+    /* Carier */
+
+    /* carierOption.html */
+
+    .CarierOption{
+        height: 90vh;
+    }
+
+    .cariers{
+        width: 52vw;
+    }
+
+    .fields{
+        grid-template-columns: 48vw 10vw;
+    }
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+     /* login.html */
+     .login-form{
+        margin-top: 20px;
+        width: 40vw;
+    }
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+   /* AdminDashboard.html */
+
+.AdminDasboard-Section{
+    width: 100vw;
+    background: var(--background-colour);
+}
+
+.logoutbtn{
+    position: absolute;
+    top: 13vh;
+    left: 85vw;
+}
+
+.link-inp{
+    width: 45vw;
+    height: 35px;
+    padding-left: 3px;
+}
+
+.submit-btn{
+    margin-left: 10px  ;
+}
+
+
+
+/* ---------------------------------------------------------- */
+
+}

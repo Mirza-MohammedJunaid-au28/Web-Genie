@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+<main>
+
+    <section class="AdminDasboard-Section pt-4 px-5">
+
+        <div class="welcome-greet ">
+            <img src="{{ url_for('static',filename='images/welcome.gif')}}" alt="welcome">
+            <h1 class="text-center">Welcome Admin</h1>
+        </div>
+        <div class="imp-btns text-center pt-3">
+            <a href="/editLinks" class="btn btn-info fw-bold me-3">Edit Links</a>
+            <a href="/uploadNotes" class="btn btn-dark fw-bold me-3">Upload Notes</a>
+            <a href="/editNotes" class="btn btn-secondary fw-bold me-3">Edit Notes</a>
+            <a href="/logout" class="btn btn-danger fw-bold">Logout</a>
+        </div>
+        <form class="send-link mt-5 text-center" action="/sendlink" method="post">
+            <h3>Enter Mail to Send Link :</h3>
+            <input type="text" name="send-mail" class="link-inp" >
+            <button class="btn btn-success ms-3 " type="submit">Submit</button>
+        </form>
+    </section>
+
+</main>
+{% endblock %}

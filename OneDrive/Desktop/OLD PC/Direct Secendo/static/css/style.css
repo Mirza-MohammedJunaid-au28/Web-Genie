@@ -1,0 +1,642 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Fredoka+One&family=Lato:wght@400;700&family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=Pacifico&display=swap');
+
+/* font-family: 'Dongle', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Luxurious Roman', cursive;
+font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Pacifico', cursive; */
+
+:root{
+    /* Colors */
+    --theme-color : #1b2c9e;
+    --background-colour : rgb(212, 228, 233);
+    --box-backgrond-colour : rgb(189, 227, 240);
+    --white : #fff;
+
+    /* Fonts */
+    --main-font : 'Mochiy Pop P One', sans-serif; 
+    --cursive-font : 'Pacifico', cursive;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    font-family: var(--main-font);
+    height: 15vh;
+    background: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.nav-item > a{
+    color: var(--theme-color) !important;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.nav-item > a:hover{
+    letter-spacing: 1px;
+    background: var(--theme-color);
+    color: var(--white) !important;
+    border-radius: 10px;
+    transition: .2s ease-out;
+}
+
+.CrceLogo{
+    padding-left: 20px;
+    height: 70px;
+    width: 250px;
+}
+
+/* INDEX MAIN */
+
+.home-box-1{
+    height: 91vh;
+    display: flex;
+    font-family: var(--cursive-font);
+    background:  var(--background-colour);
+    }
+
+.box-1{
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    gap: 2rem;
+    border-radius: 15px;
+    background: var(--box-backgrond-colour); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: var(--theme-color);
+}
+
+.box1-content{
+    text-align: center;
+    padding: 10px 10px;
+    align-self: center;
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.box1-content > h1{
+    line-height: 4rem;
+} 
+
+.what-heading,.when-heading{
+    display: inline-block;
+    margin: auto;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.where-heading{
+    margin-top: 2rem;
+}
+
+.box-1 > img{
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    align-self: center;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.FAQ{
+    height: 100vh;
+    background: rgb(212, 228, 233); 
+}
+
+.faq-heading{
+    color: var(--theme-color);
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+/* Syllabus */
+.Syllabus-section{
+    /* width: 100vw; */
+    background: var(--background-colour);
+}
+
+.card > img {
+    height: 220px;
+}
+
+.card > .aids-img{
+    height: 200px;
+}
+
+.download-btn{
+    background: var(--theme-color) !important;
+    color: var(--white);
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+/* Let's Talk  &  Chat */ 
+
+/* letTalk.html & Chat.html */
+
+.letsTalk,
+.chat{
+    width: 100vw;
+    height: 85vh;
+    background: var(--background-colour);
+}
+
+.letsTalk-heading,
+.chat-heading{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: var(--theme-color);
+}
+
+.discord-img
+{
+    height: 100px;
+    width: 100px;
+}
+
+.whatsapp-img{
+    height: 80px;
+    width: 130px;
+}
+
+.joinUs{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--theme-color) !important;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    margin-top: 50px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.join-Btn {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .join-Btnn {
+    border: 2px solid #1b2c9e;
+    border-radius: 12px ;
+    z-index: 1;
+    color: #1b2c9e;
+    text-decoration: none;
+  }
+  
+  .join-Btnn:after {
+    border-radius: 12px ;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #1b2c9e;
+    transition: all 0.3s ease;
+  }
+  
+  .join-Btnn:hover {
+    color: #fff;
+  }
+  
+  .join-Btnn:hover:after {
+    border-radius: 12px ;
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+
+.discord-perks,
+.whatsapp-perks{
+    width: 60vw;
+    margin: auto;
+    margin-top: 60px;
+    color: var(--theme-color);
+}
+
+.discord-perks > ol > li,
+.whatsapp-perks > ol > li{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.field-boxes{
+    width: 80vw;
+}
+
+.comps-box,
+.aids-box,
+.mech-box,
+.elect-box,
+.it-box,
+.prod-box{
+    border: 3px solid var(--theme-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--theme-color);
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+/* Carier*/
+
+/* carierOption.html */
+
+.CarierOption{
+    background: rgb(212, 228, 233);
+    height: 85vh;
+}
+
+.selectField{
+    font-family: var(--main-font);
+    color: #00008b;
+}
+
+.cariers{
+    width: 30vw;
+    margin: auto;
+}
+
+
+.fields{
+    display: grid;
+    grid-template-columns: 28vw 10vw;
+    color: var(--theme-color);
+}
+
+.field-heading{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.laptop,
+.cogs,
+.network,
+.IT,
+.production{
+    font-size: 2rem;
+    padding-top: 5px;
+}
+
+/* computerEnginnering.html */
+
+.computerEngineering{
+    background: rgb(212, 228, 233);
+}
+
+.comps-heading{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    color: var(--theme-color);
+}
+
+/* ---------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------- */
+
+/* login.html */
+
+.login-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    margin-top: 100px;
+    width: 20vw;
+}
+
+.loginImg{
+    height: 150px;
+    width: 150px;
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+/* AdminDashboard.html */
+
+.AdminDasboard-Section{
+    width: 100vw;
+    /* background: var(--background-colour); */
+}
+
+.welcome-greet > img{
+    display: block;
+    margin: auto;
+}
+
+.dasboard-partition{
+    display:  flex;
+    justify-content: center;
+    gap: 3rem;  
+}
+
+.form-section{
+    background-color: var(--background-colour);
+    /* width: 100vw; */
+    min-height: 85vh; 
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    gap: 10rem;
+    /* flex-direction: column; */
+    margin: auto;
+    /* width: 40vw; */
+}
+
+.logoutbtn{
+    position: absolute;
+    top: 17vh;
+    left: 93vw;
+}
+
+.link-inp{
+    width: 25vw;
+    height: 35px;
+    padding-left: 3px;
+}
+
+.submit-btn{
+    margin-left: 10px  ;
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+/* Notes.html */
+
+.notes-section{
+    height: 85vh;
+    width: 100vw;
+    background: rgb(212, 228, 233);
+}
+
+.notes-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 80vw;
+    margin: auto;
+    padding-top: 12vh;
+}
+
+.serviceBox{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px 20px 15px;
+    position: relative;
+    z-index: 1;
+    width: 300px;
+}
+.serviceBox .service-icon{
+    color: #fff;
+    background: #00008b ;
+    font-size: 35px;
+    line-height: 70px;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto 55px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transform: rotate(45deg);
+    position: relative;
+} 
+.serviceBox .service-icon:before{
+    content: '';
+    border: 4px solid #00008b;
+    border-top: none;
+    border-left: none;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: -23px;
+    bottom: -23px;
+}
+.serviceBox .service-icon span{
+    display: block;
+    transform: rotate(-45deg);
+}
+.serviceBox .title{
+    color: #fff;
+    background: #00008b;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    margin: 0 0 10px;
+}
+
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+/* contactUs.html */
+
+.contact-Section{
+    max-width: 100vw;
+    background: rgb(212, 228, 233);
+    font-family: 'Fredoka One', cursive;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.contactImg{
+    height: 230px;
+    width: 200px;
+}
+
+.contact-formInp{
+    /* font-family: 'Fredoka One', cursive; */
+    width: 500px !important;
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+/* Error.html */
+
+.Error_img{
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    }
+    
+    .Error-Section{
+        height: 100vh;
+        width: 100vw;
+    }
+    
+/* ---------------------------------------------------------- */
+    
+/* ---------------------------------------------------------- */
+
+.upload-file{
+    max-width: 100vw;
+    background: rgb(212, 228, 233);
+    font-family: 'Fredoka One', cursive;
+    color: var(--theme-color);
+    padding-bottom: 30px;
+}
+
+.upload-form{
+    max-width: 30vw;
+    margin-top: 5vh;
+    /* background-color: aqua; */
+}
+
+.text-inp{
+    min-width: 25vw;
+    height: 30px;
+    padding-left: 3px;
+}
+
+#department,#chapter-no{
+    color: var(--theme-color);
+}
+
+.notes_submit_btn{
+    border: none;
+    border-radius: 12px;
+    background-color: var(--box-backgrond-colour);
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+.Edit-Notes{
+    width: 100vw;
+    height: 85vh;
+    background: rgb(212, 228, 233);
+}
+
+.editNotes-heading{
+    color: var(--theme-color);
+    font-family: 'Fredoka One', cursive;
+}
+
+.tabletags{
+    color: var(--theme-color);
+}
+
+.tablerow{
+    margin-top: 100px !important;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+.AIDSnotes-section{
+    width: 100vw;
+    background: rgb(212, 228, 233);
+}
+
+.docsImg{
+    height: 200px;
+    width: 200px;
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+
+.council-section{
+    width: 100vw;
+    height: 85vh;
+    background: rgb(212, 228, 233);
+}
+
+.teams,.team-heading{
+    text-decoration: none;
+    color: var(--theme-color);
+    font-family: 'Fredoka One', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+/* Animation */
+
+@keyframes slideInFromRight {
+    0% { 
+        transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<section class="upload-file">
+    <h2 class="text-center pt-3">Upload Notes</h2>
+    <form action="/submitNotes" method="post" class="upload-form d-flex flex-column align-items-start mx-auto" enctype="multipart/form-data">
+        <h4>Contributer Name : </h4> 
+        <input type="text" name="contributer_name" class="text-inp" id="contributer_name" required>
+        <h4 class="mt-3">Department : </h4> 
+        <select name="dept" class="p-1" id="department" required>
+            <option value=""> </option>
+            <option value="aids">AIDS</option>
+            <option value="ce">CE</option>
+            <option value="ecs">ECS</option>
+            <option value="mech">MECH</option>
+            <option value="prod">PROD</option>
+        </select>
+        <h4 class="mt-3">Subject : </h4> 
+        <input type="text" name="subject" class="text-inp" required>
+        <div>
+            <label class="mt-3 fs-4">Sem : </label> 
+            <select name="sem" class="p-2" id="sem-no" required>
+                <option value=""> </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5">6</option>
+                <option value="5">7</option>
+                <option value="5">8</option>
+            </select>
+            <label class="mt-3 fs-4 ms-5">Chapter No : </label> 
+            <select name="chapt" class="p-2" id="chapter-no" required>
+                <option value=""> </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h4 class="mt-3">Topic Name : </h4> 
+        <input type="text" name="topic" class="text-inp">
+        <h4 class="mt-3">Slug : </h4> 
+        <input type="text" name="slug" class="text-inp">
+        <h4 class="mt-3">Uplaod : </h4> 
+        <input type="file" name="upload_file" class="text-inp" accept=".pdf,.doc" >
+        <button class="p-2 align-self-center mt-5 join-Btn join-Btnn" type="submit">Submit</button>
+    </form>
+</section>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block body %}
+    <main>
+
+        <section class="Syllabus-section">
+
+            <div class="field-cart d-flex m-auto justify-content-center align-items-center flex-wrap pt-5 w-75 gap-5 gap-md-4 pb-5">
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="{{ url_for('static',filename='images/electronic.jpg')}}" class="card-img-top" alt="extc">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold fs-3">B.E. in Electronics Engineering</h5>
+                        <p class="card-text text-center fw-bold fs-5">Click Here to Download</p>
+                        <a href="{{ url_for('static',filename='pdf/ecs.pdf')}}" class="btn btn-primary download-btn" download>Download</a>
+                    </div>
+                </div>
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="{{ url_for('static',filename='images/comps.PNG')}}" class="card-img-top" alt="comps">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold fs-3">B.E. in Computer Engineering</h5>
+                        <p class="card-text text-center fw-bold fs-5">Click Here to Download</p>
+                        <a href="{{ url_for('static',filename='pdf/ce.pdf')}}" class="btn btn-primary download-btn" download>Download</a>
+                    </div>
+                </div>
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="{{ url_for('static',filename='images/AIDS.jpg')}}" class="card-img-top aids-img" alt="AiDs">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold fs-4 ">B.Tech in Artificial Intelligence & Data Structure</h5>
+                        <p class="card-text text-center fw-bold fs-5">Click Here to Download</p>
+                        <a href="{{ url_for('static',filename='pdf/it.pdf')}}" class="btn btn-primary download-btn" download>Download</a>
+                    </div>
+                </div>
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="{{ url_for('static',filename='images/mech.jpg')}}" class="card-img-top" alt="mech">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold fs-3">B.E. in Mechanical Engineering</h5>
+                        <p class="card-text text-center fw-bold fs-5">Click Here to Download</p>
+                        <a href="{{ url_for('static',filename='pdf/mech.pdf')}}" class="btn btn-primary download-btn" download>Download</a>
+                    </div>
+                </div>
+
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="{{ url_for('static',filename='images/production.jpg')}}" class="card-img-top" alt="Production">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold fs-3">B.E. in Production Engineering</h5>
+                        <p class="card-text text-center fw-bold fs-5">Click Here to Download</p>
+                        <a href="{{ url_for('static',filename='pdf/prod.pdf')}}" class="btn btn-primary download-btn" download>Download</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    {% endblock %}

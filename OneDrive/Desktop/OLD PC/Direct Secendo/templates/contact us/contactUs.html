@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<main>
+    <section class="contact-Section">
+        <div class="contact-form">
+        <img src="{{ url_for('static',filename='images/contact.gif')}}" alt="contact Gif" class="contactImg">
+        <form class="mt-5" action = "/contact" method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1 " class="form-label fs-5">Name :</label>
+              <input type="text" class="form-control contact-formInp" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-5">Email address :</label>
+              <input type="email" class="form-control contact-formInp" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-5">Phone :</label>
+              <input type="tel" class="form-control contact-formInp" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-5">Message :</label>
+              <textarea class="form-control" id="message" name = "message" placeholder="Enter your message here..." style="height: 5rem" data-sb-validations="required" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    </section>
+</main>
+
+
+{% endblock %}

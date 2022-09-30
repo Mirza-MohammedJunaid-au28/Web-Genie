@@ -1,0 +1,197 @@
+:root {
+    /* Colors */
+    --theme-color: #1b2c9e;
+    --background-colour: rgb(212, 228, 233);
+    --box-backgrond-colour: rgb(189, 227, 240);
+    ;
+    --white: #fff;
+
+    /* Fonts */
+    --main-font: 'Mochiy Pop P One', sans-serif;
+    --cursive-font: 'Pacifico', cursive;
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+
+    /* index.html */
+
+    .navbar {
+        height: 12vh;
+        width: 100vw;
+    }
+
+    .CrceLogo {
+        padding-left: 0;
+        height: 50px;
+        width: 200px;
+    }
+
+    .nav-home {
+        margin-top: 5vh;
+    }
+
+    .nav-item {
+        background: var(--background-colour);
+        z-index: 99;
+    }
+
+    .nav-item>a:hover {
+        background: var(--background-colour) !important;
+        padding-left: 20px;
+        transition: .3s ease-in;
+        color: var(--theme-color) !important;
+    }
+
+    .box-1 {
+        height: 85vh;
+        width: 90vw;
+        flex-wrap: wrap;
+    }
+
+    .box1-content>h1 {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .what-heading,
+    .when-heading {
+        display: inline-block;
+        margin: auto;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .box-1>img {
+        height: 50vh;
+        width: 250px;
+    }
+
+    .faq-heading {
+        font-size: 2rem;
+    }
+
+    /* ---------------------------------------------------------- */
+
+    /* ---------------------------------------------------------- */
+
+    /* Let's Talk */
+
+    /* letsTalk.html */
+
+    .letsTalk {
+        height: 88vh;
+    }
+
+    .letsTalk-heading {
+        font-size: 1.5rem;
+    }
+
+    .discord-img {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .joinUs {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+
+    .discord-perks {
+        width: 90vw;
+    }
+
+
+
+
+
+
+    /* ---------------------------------------------------------- */
+
+    /* ---------------------------------------------------------- */
+
+    /* Carier */
+
+    /* carierOption.html */
+
+    .cariers {
+        width: 80vw;
+    }
+
+    .selectField {
+        font-size: 1.5rem;
+    }
+
+    .fields {
+        grid-template-columns: 70vw 10vw;
+    }
+
+    .field-heading {
+        font-size: 1.2rem;
+    }
+
+    .laptop,
+    .cogs,
+    .network,
+    .IT,
+    .production {
+        font-size: 1.5rem;
+        padding-top: 5px;
+    }
+
+    /* computerEngineering.html */
+
+    .comps-heading {
+        font-size: 1rem;
+    }
+
+    /* ---------------------------------------------------------- */
+
+    /* ---------------------------------------------------------- */
+
+    /* login.html */
+    .login-form {
+        margin-top: 20px;
+        width: 70vw;
+    }
+
+    /* ---------------------------------------------------------- */
+
+    /* ---------------------------------------------------------- */
+
+    /* AdminDashboard.html */
+
+    .AdminDasboard-Section {
+        width: 100vw;
+        background: var(--background-colour);
+    }
+
+    .logoutbtn {
+        position: absolute;
+        top: 14vh;
+        left: 70vw;
+    }
+
+    .discord-form{
+        margin-top: 50px;
+    }
+
+    .link-inp {
+        width: 80vw;
+        height: 35px;
+        padding-left: 3px;
+    }
+
+    .submit-btn{
+        margin-top: 10px  ;
+    }
+
+    /* ---------------------------------------------------------- */
+
+
+}

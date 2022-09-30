@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<section class="form-section d-flex">
+    <div class="whatsapp_discord_link">
+        <form action="/edit/discord" method="post" class="discord-form">
+            <h3 class="text-center my-3">Discord Server :</h3>
+            <input type="text" name="discord-url" class="link-inp" value='{{ discord.discord_url }}'>
+            <button class="btn btn-success submit-btn">Submit</button>
+        </form>
+
+        <h3 class="text-center mt-5">Whatsapp Groups :</h3>
+        {% for groups in whatsapp %}
+        <form action="/edit/{{groups.feilds}}whatsapp" method="post" class="whatsapp-form">
+            <h4 class="pt-4">{{groups.feilds}} :</h4>
+            <input type="text" name="{{groups.feilds}}whatsaappURL" class="link-inp" value="{{groups.whatsapp_url}}">
+            <button class="btn btn-success submit-btn">Submit</button>
+        </form>
+        {% endfor %}
+    </div>
+
+    <form action="/edit/formlink" method="post">
+        <h4 class="pt-4 text-center">Google Form Link :</h4>
+        <input type="text" name="form-link" class="link-inp"  value="{{form.form_link}}">
+        <button class="btn btn-success submit-btn">Submit</button>
+    </form>
+
+</section>
+
+{% endblock %}

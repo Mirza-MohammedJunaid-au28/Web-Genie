@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block body %}
+    <main>
+        <section class="CarierOption">
+
+            <h1 class="text-center fw-bold py-5 selectField ">Select your Field</h1>
+
+            <div class="cariers mt-3 d-flex justify-content-center align-items-start flex-column gap-3">
+
+                <div class="ITEngineering">
+                    <a href="/career-AIDS" class="fields text-decoration-none">
+                        <span class="field-heading">AIDS </span> <i class="fas fa-robot IT"></i>
+                    </a>
+                </div>
+                <div class="computerEngg">
+                    <a href="/career-CE" class="fields text-decoration-none">
+                        <span class="field-heading">Computer Engineering</span>
+                        <i class="fas fa-laptop laptop"></i>
+                    </a>
+                </div>
+                <div class="electronicEngg">
+                    <a href="/career-ECS" class="fields text-decoration-none">
+                        <span class="field-heading">Electronics Engineering</span><i class="fas fa-chart-network network"></i>
+                    </a>
+                </div>
+                <div class="mechEngg">
+                    <a href="/career-ME" class="fields text-decoration-none">
+                        <span class="field-heading">Mechanical Engineering</span> 
+                        <i class="fas fa-cogs cogs"></i>
+                    </a>
+                </div>
+                <div class="ProductEngineering">
+                    <a href="/career-PE" class="fields text-decoration-none">
+                        <span class="field-heading">Production Engineering </span> <i class="fas fa-industry-alt production"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% endblock %}
